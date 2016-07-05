@@ -3,10 +3,9 @@ function Mostrar()
 //tomo la edad  
 
 	var edad;
-	var result;
 
 	edad= document.getElementById("edad").value;
-	result= parseInt(edad);
+	edad= parseInt(edad);
 
 	if (edad >= 18) 
 	{
