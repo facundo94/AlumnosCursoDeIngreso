@@ -30,6 +30,7 @@ function Promedio ()
 	precioDos= parseInt(document.getElementById("PrecioDos").value);
 	precioTres= parseInt(document.getElementById("PrecioTres").value);
 	resultado= (precioUno+precioDos+precioTres) / 3;
+	resultado=parseInt(resultado);
 
 	alert(resultado);
 
@@ -46,6 +47,7 @@ function PrecioFinal ()
 	precioDos= parseInt(document.getElementById("PrecioDos").value);
 	precioTres= parseInt(document.getElementById("PrecioTres").value);
 	resultado= (precioUno+precioDos+precioTres)*1.21;
+	resultado=parseInt(resultado);
 
 	alert(resultado);
 
