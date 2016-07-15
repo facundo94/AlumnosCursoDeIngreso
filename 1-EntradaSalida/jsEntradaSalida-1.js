@@ -2,5 +2,6 @@
 function Mostar()
 {
 	alert("Mensaje 1");
+	
 }
 
