@@ -6,10 +6,11 @@ function Mostrar()
 	var numeros;
 	
 	while(contador <5){
+		if (!((Number.isNaN(numeros)) || (numeros==" "))) {
 		numeros= parseInt(prompt("Ingrese los números"));
 		contador= contador+1;
 		acumulador= acumulador+numeros;
-		
+		}
 	}
 	document.getElementById('suma').value=acumulador;
 	document.getElementById('promedio').value=acumulador/5;

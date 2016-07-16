@@ -9,21 +9,55 @@ var eleccionMaquina;
 function comenzar()
 {
 	
-
-
+eleccionMaquina=Math.floor(Math.random()*(4-1)+1);
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
+	comenzar();
+
+	switch(eleccionMaquina){
+		case 1:
+			alert("La maquina eligio piedra: empate!");
+			break;
+		case 2:
+			alert("La maquina eligio tijera: perdiste");
+			break;
+		case 3:
+			alert("La maquina eligio tijera: ganaste");
+			break;
+	}
 
 }//FIN DE LA FUNCIÓN
 function papel()
 {
+	comenzar();
 
+	switch(eleccionMaquina){
+		case 1:
+			alert("La maquina eligio piedra: ganaste");
+			break;
+		case 2:
+			alert("La maquina eligio papel: empate");
+			break;
+		case 3:
+			alert("La maquina eligio tijera: perdiste");
+			break;
+	}
 
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-	
+	comenzar();
+
+	if (eleccionMaquina==1) {
+		alert("La maquina eligio piedra: perdiste");
+
+	}
+	else if(eleccionMaquina==2){
+		alert("La maquina eligio papel: ganaste");
+	}
+	else{
+		alert("La maquina eligio tijera: empate");
+	}
 
 }//FIN DE LA FUNCIÓN

@@ -4,16 +4,18 @@ function Mostrar()
 	var contador=0;
 	var acumulador=0;
 	var respuesta='si';
-	var numeros;
 
-while(contador>=0){
+while(respuesta!="no"){
 
-		numeros=prompt("Ingrese los números");
+		respuesta=prompt("Ingrese los números");
 
-		if(numeros!="si"){
-			numeros= parseInt(numeros);
+		if(respuesta!="no"){
+			respuesta= parseInt(respuesta);
 			contador= contador+1;
-			acumulador= acumulador+numeros;
+			acumulador= acumulador+respuesta;
+		}
+		else if(isNaN(resppuesta)){
+			
 		}
 		else{
 			break;
