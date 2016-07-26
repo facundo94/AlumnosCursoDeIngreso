@@ -20,7 +20,7 @@ function piedra()
 			alert("La maquina eligio piedra: empate!");
 			break;
 		case 2:
-			alert("La maquina eligio tijera: perdiste");
+			alert("La maquina eligio papel: perdiste");
 			break;
 		case 3:
 			alert("La maquina eligio tijera: ganaste");

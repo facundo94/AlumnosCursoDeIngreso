@@ -12,23 +12,48 @@ function CalcularPrecio ()
 {
  	var cantidad;
  	var marca;
- 	var precio;
- 	var importe;
- 	var compra;
+ 	var precio=35;
 
  	cantidad= parseInt(document.getElementById("Cantidad").value);
  	marca= document.getElementById("Marca").value;
- 	precio= 35;
- 	compra= cantidad && marca;
+ 	precio= precio*cantidad;
 
- 	switch(compra){
- 		case ArgentinaLuz:
- 		case 5:
- 			alert(precio *0.6);
- 			break;
- 		case FelipeLamparas:
- 		case JeLuz:
- 		case HazIluminacion:
- 		case Osram:
+ 	if (cantidad >=6) {
+ 		precio=precio*0.5;
  	}
+ 	else if (cantidad==5) {
+ 		if(marca== "ArgentinaLuz"){
+ 			precio=precio*0.6;
+ 		}
+ 		else{
+ 			precio=precio*0.7;
+ 		}
+ 	}
+ 	else if (cantidad==4) {
+ 		if (marca=="ArgentinaLuz" || marca == "FelipeLamparas") {
+ 			precio=precio*0.75;
+ 		}
+ 		else{
+ 			precio=precio*0.8;
+ 		}
+ 	}
+ 	else if (cantidad==3) {
+ 		if (marca== "ArgentinaLuz") {
+ 			precio=precio*0.85;
+ 		}
+ 		else if (marca== "FelipeLamparas") {
+ 			precio=precio*0.9;
+ 		}
+ 		else{
+ 			precio=precio*0.95;
+ 		}
+
+ 	}
+
+ 	if (precio>120) {
+ 		precio= precio*1.10
+ 	}
+
+ 	document.getElementById("precioDescuento").value=precio;
+
 }

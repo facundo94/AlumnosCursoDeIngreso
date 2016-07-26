@@ -18,17 +18,19 @@ function piedra()
 		switch(eleccionMaquina){
 			case 1:
 				alert("empate");
-				ContadorDeEmpates=ContadorDeEmpates+1;
+				ContadorDeEmpates++;
 				break;
 			case 2:
 				alert("perdiste");
-				ContadorDePerdidas=ContadorDePerdidas+1;
+				ContadorDePerdidas++;
 				break;
 			case 3:
 				alert("ganaste");
-				ContadorDeGanadas=ContadorDeGanadas+1;
+				ContadorDeGanadas++;
 				break;
 		}
+
+		mostarResultado()
 }//FIN DE LA FUNCIÓN
 function papel()
 {
@@ -37,17 +39,19 @@ function papel()
 	switch(eleccionMaquina){
 		case 1:
 			alert("ganaste");
-			ContadorDeGanadas=ContadorDeGanadas+1;
+			ContadorDeGanadas++;
 			break;
 		case 2:
 			alert("empate");
-			ContadorDeEmpates=ContadorDeEmpates+1;
+			ContadorDeEmpates++;
 			break;
 		case 3:
 			alert("perdiste");
-			ContadorDePerdidas=ContadorDePerdidas+1;
+			ContadorDePerdidas++;
 			break;
 	}
+
+	mostarResultado()
 
 
 }//FIN DE LA FUNCIÓN
@@ -58,17 +62,19 @@ function tijera()
 	switch(eleccionMaquina){
 		case 1:
 			alert("perdiste");
-			ContadorDePerdidas=ContadorDePerdidas+1;
+			ContadorDePerdidas++;
 			break;
 		case 2:
 			alert("ganaste");
-			ContadorDeGanadas=ContadorDeGanadas+1;
+			ContadorDeGanadas++;
 			break;
 		case 3:
 			alert("empate");
-			ContadorDeEmpates=ContadorDeEmpates+1;
+			ContadorDeEmpates++;
 			break;
 	}
+
+	mostarResultado()
 
 }//FIN DE 
 
